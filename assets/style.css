@@ -36,7 +36,7 @@ nav{
   display: flex;
   list-style-type: none;
   flex-direction: column;
-  background: #324848;
+  background: rgb(103, 108, 111);
   position: fixed;
   top: -100%;
   /*   left: -100%; */
