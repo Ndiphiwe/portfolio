@@ -36,7 +36,7 @@ nav{
   display: flex;
   list-style-type: none;
   flex-direction: column;
-  background: #4f8080;
+  background: #324848;
   position: fixed;
   top: -100%;
   /*   left: -100%; */
@@ -75,14 +75,6 @@ nav{
   text-align: center;
   padding-top: 20vh;
 }
-.content h1, h2{
-  color: white;
-  line-height: 20vh;
-}
-.content button{
-  text-align: center;
-}
-
-.landing{
-  /* height: 800px; */
+.content h2{
+  -webkit-text-stroke: .5px #000000;
 }
