@@ -1,0 +1,88 @@
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bgimg{
+  background-image: url(/imgs/pexels-negative-space-34088.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#logo{
+  color: white;
+}
+nav{
+    /* background-color: darkgray; */
+    width: 100%;
+}
+.navbar{
+    position: fixed;
+}
+
+.mynav{
+    padding: 10px;
+    text-decoration: none;
+}
+.mynav a{
+    text-decoration: none;
+    font-size: 40px;
+    padding:0 0 0 20px;
+    color: black;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  background: #4f8080;
+  position: fixed;
+  top: -100%;
+  /*   left: -100%; */
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 20px;
+  font-family: sans-serif;
+  transition: all 0.3s linear;
+}
+.navbar-links a{
+  text-decoration: none;
+  color: azure;
+}
+
+.navbar-links.active {
+  top: 0;
+  left: 0;
+}
+
+.navbar-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  font-size: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 30px 20px;
+}
+
+.content{
+  text-align: center;
+  padding-top: 20vh;
+}
+.content h1, h2{
+  color: white;
+  line-height: 20vh;
+}
+.content button{
+  text-align: center;
+}
+
+.landing{
+  /* height: 800px; */
+}
