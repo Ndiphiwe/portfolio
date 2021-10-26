@@ -18,7 +18,7 @@
 
 /* Navigtion */
 .thisnav{
-  background: linear-gradient(to top, #ffffcc -22%, #000000 100%);
+  background: linear-gradient(to right, #ffffff -22%, #000000 100%);
   padding: 10px 20px;
 }
 .hmnav{
@@ -92,6 +92,10 @@
 }
 #tmln{
   background-color: #d6dddc;
+  padding-bottom: 10vh;
+}
+#tmln h1{
+padding: 4vh;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -103,7 +107,7 @@
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
-  /* position: absolute; */
+  position: absolute;
   width: 6px;
   background-color: white;
   top: 0;
