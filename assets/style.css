@@ -76,7 +76,7 @@
 }
 
 .content h1, h2{
-  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
@@ -237,6 +237,7 @@ footer{
 
 
 
+
 /* SKILLS */
 
 
@@ -276,5 +277,7 @@ font-size: 3em;
 text-align: center;
 margin: 4%;
 font-weight: bold;
-
+}
+.card-body .card-title{
+  margin-top: 20px;
 }
