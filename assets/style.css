@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+.thisbody{
+  background: linear-gradient(-45deg, #565a5c, #719396, #d8d8d8, #b4d6ce, #05daff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+      @keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
 #bgimg{
   background-image: url(/imgs/pexels-negative-space-34088.jpg);
   background-size: cover;
@@ -75,14 +93,31 @@
   text-align: center;
 }
 
-.content h1, h2{
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+.content h1{
+  background-color: rgba(0, 0, 0, 0.39);
+  width: max-content;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 0 2vh;
+  /* -webkit-text-stroke-width: 2px; */
+  /* -webkit-text-stroke-color: rgb(150, 150, 150); */
+}
+
+.content h2{
+  background-color: rgba(0, 0, 0, 0.342);
+  width: max-content;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 6px; 
+  padding: 1vh 2vh;
+  /* -webkit-text-stroke-width: .5px; */
+  /* -webkit-text-stroke-color: black; */
 }
 
 /* ABOUT SECTION */
 #abtsec{
-  padding-top: 14vh;
+  padding-top: 20vh;
   margin-bottom: 20vh;
 }
 
@@ -242,7 +277,7 @@ footer{
 
 
 #skills{
-  margin-top: 100px;
+  margin-top: 20vh;
 }
 
 .card{
