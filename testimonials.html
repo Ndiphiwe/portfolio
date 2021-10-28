@@ -11,206 +11,118 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <title>🅽 Ndiphiwe Ngxola</title>
     <style>
-*, *:before, *:after {
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #333;
-  font-family: "Nunito Sans", sans-serif;
-}
+/* gradient background */
 
 body {
+    background: linear-gradient(-45deg, #31393f, #719396, #dfdfdf, #b4d6ce);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+        @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  background-color: #ecf0f9;
-  background-attachment: fixed;
+  box-sizing: border-box;
 }
 #testis{
-    margin-top: 20vh;
+  margin-top: 20vh;
 }
-.content {
+.container {
+  margin: auto;
+  padding: 2em;
+  max-width: 68rem;
+}
+
+.flex {
   display: flex;
-  margin: 0 auto;
+  gap: 2em;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1000px;
+  flex-flow: row wrap;
 }
 
-.heading {
-  width: 100%;
-  margin-left: 1rem;
-  font-weight: 900;
-  font-size: 1.618rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1ch;
-  line-height: 1;
-  padding-bottom: 0.5em;
-  margin-bottom: 1rem;
-  position: relative;
-}
-.heading:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
-  bottom: 0;
-}
-
-.description {
-  width: 100%;
-  margin-top: 0;
-  margin-left: 1rem;
-  margin-bottom: 3rem;
+.flex > * {
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 .card {
-  color: inherit;
-  cursor: pointer;
-  width: calc(33% - 2rem);
-  min-width: calc(33% - 2rem);
-  height: 400px;
-  min-height: 400px;
-  perspective: 1000px;
-  margin: 1rem;
-  position: relative;
-}
-@media screen and (max-width: 800px) {
-  .card {
-    width: calc(50% - 2rem);
-  }
-}
-@media screen and (max-width: 500px) {
-  .card {
-    width: 100%;
-  }
-}
-
-.front,
-.back {
   display: flex;
-  border-radius: 6px;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: ease-in-out 600ms;
-}
-
-.front {
-  background-size: cover;
-  padding: 2rem;
-  font-size: 1.618rem;
-  font-weight: 600;
-  color: #fff;
-  overflow: hidden;
-  font-family: Poppins, sans-serif;
-}
-.front:before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
-  opacity: 0.25;
-  z-index: -1;
-}
-.card:hover .front {
-  transform: rotateY(180deg);
-}
-.card:nth-child(even):hover .front {
-  transform: rotateY(-180deg);
-}
-
-.back {
+  flex-direction: column;
+  min-width: 15rem;
+  max-width: calc(12.5rem + 13vw);
   background: #fff;
-  transform: rotateY(-180deg);
-  padding: 0 2em;
-}
-.back .button {
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
-}
-.back .button:before {
-  box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
-  background-color: rgba(26, 87, 230, 0.25);
-}
-.card:hover .back {
-  transform: rotateY(0deg);
-}
-.card:nth-child(even) .back {
-  transform: rotateY(180deg);
-}
-.card:nth-child(even) .back .button {
-  background: linear-gradient(135deg, #e61a80, #e61a3c);
-}
-.card:nth-child(even) .back .button:before {
-  box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
-  background-color: rgba(230, 26, 60, 0.25);
-}
-.card:nth-child(even):hover .back {
-  transform: rotateY(0deg);
+  border-radius: 0.75em;
+  overflow: hidden;
+  box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
+  transition: transform 270ms ease;
+  position: relative;
 }
 
-.button {
-  transform: translateZ(40px);
-  cursor: pointer;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  font-weight: bold;
-  color: #fff;
-  padding: 0.5em 1em;
-  border-radius: 100px;
-  font: inherit;
-  border: none;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: 300ms ease;
-}
-.button:before {
-  transition: 300ms ease;
-  position: absolute;
-  display: block;
+.card::before {
   content: "";
-  transform: translateZ(-40px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  height: calc(100% - 20px);
-  width: calc(100% - 20px);
-  border-radius: 100px;
-  left: 10px;
-  top: 16px;
+  position: absolute;
+  display: flex;
+  inset: 0;
+  isolation: isolate;
+  mix-blend-mode: color;
+  background: linear-gradient(180deg, #0000 48%, 48%, red, 70%, blue);
+  opacity: 0;
 }
-.button:hover {
-  transform: translateZ(55px);
+
+.card:hover::before {
+  opacity: 1;
 }
-.button:hover:before {
-  transform: translateZ(-55px);
+.card:hover {
+  transform: scale(1.05);
 }
-.button:active {
-  transform: translateZ(20px);
+
+img {
+  display: block;
+  max-width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  height: auto;
+  margin-bottom: 2em;
 }
-.button:active:before {
-  transform: translateZ(-20px);
-  top: 12px;
+
+.card-body {
+  height: 250px;
+  padding: 1em 0;
 }
-    </style>
+
+h3 {
+  text-align: center;
+  color: #999fff;
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+
+p {
+  color: #0009;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  /* margin: 1em auto; */
+  padding-inline: 0.5em;
+  max-width: 35ch;
+}
+/* footer{
+  margin-top: 5vh;
+} */
+</style>
+
 </head>
 <body>
     
@@ -235,74 +147,70 @@ body {
     </div>
 
 
-      <!-- TESTIMONIALS SEC -->
-      <section id="testis">
-<div class="content">
-    <h1 class="heading">Card Flip</h1>
-    <p class="description">Hover over a card to flip it.</p><a class="card" href="#!">
-      <div class="front" style="background-image: url(imgs/me.jpg)">
-        <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-      </div>
-      <div class="back">
-        <div>
-          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-          <button class="button">Click Here</button>
+      <!-- PROJECTS -->
+  <section id="testis">
+    <div class="main">
+      <h1 class="h1 text-center">Testimonials</h1>
+      <div class="container">
+        <div class="flex">
+          <div class="card">
+            <img src="imgs/Godwin.jpeg" alt="">
+            <div class="card-body">
+              <h3>Godwin Dzvapatsva</h3>
+              <p>Lorem ipsum dolor sit amet adipisicing elit. Praesentium dolorum reiciendis veritatis
+                nulla minima, atque fugi, voluptatum beatae illo!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/me.jpg" alt="">
+            <div class="card-body">
+              <h3>Alex Sexwale</h3>
+              <p>Lorem ipsum dolor sit amet adipisicing elit. Praesentium dolorum reiciendis veritatis
+                nulla minima, atque fugi, voluptatum beatae illo!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/hannah.jpg" alt="">
+            <div class="card-body">
+              <h3>Hannah Dalwai</h3>
+              <p>Tony is a team player who is always ready to help those in need of assistance. I am glad to have had him on my team.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/zharne2.jpg" alt="">
+            <div class="card-body">
+              <h3>Zharne Desember</h3>
+              <p>Ndiphiwe is a dedicated developer who is good at problem solving. He works well in a team and is willing to help others.
+                He produces high quality work.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/me.jpg" alt="">
+            <div class="card-body">
+              <h3>Flexbox is awesome</h3>
+              <p>Lorem ipsum dolor sit amet adipisicing elit. Praesentium dolorum reiciendis veritatis
+                nulla minima, atque fugi, voluptatum beatae illo!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgs/enosh.JPG" alt="">
+            <div class="card-body">
+              <h3>Enosh Elliot</h3>
+              <p>
+                Tony shows exceptional skill and ability to want to learn everyday, a very hardworker and humble spirit.
+              </p>
+            </div>
+          </div>
         </div>
-      </div></a><a class="card" href="#!">
-        <div class="front" style="background-image: url(imgs/me.jpg)">
-            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
       </div>
-      <div class="back">
-        <div>
-          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-          <button class="button">Click Here</button>
-        </div>
-      </div></a><a class="card" href="#!">
-        <div class="front" style="background-image: url(imgs/me.jpg)">
-            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-      </div>
-      <div class="back">
-        <div>
-          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-          <button class="button">Click Here</button>
-        </div>
-      </div></a><a class="card" href="#!">
-        <div class="front" style="background-image: url(imgs/me.jpg)">
-            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-      </div>
-      <div class="back">
-        <div>
-          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-          <button class="button">Click Here</button>
-        </div>
-      </div></a><a class="card" href="#!">
-        <div class="front" style="background-image: url(imgs/me.jpg)">
-            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-      </div>
-      <div class="back">
-        <div>
-          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-          <button class="button">Click Here</button>
-        </div>
-      </div></a><a class="card" href="#!">
-        <div class="front" style="background-image: url(imgs/me.jpg)">
-            <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-      </div>
-      <div class="back">
-        <div>
-          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-          <button class="button">Click Here</button>
-        </div>
-      </div></a>
-  </div>
-</section>
-    <!-- testis ends here -->
+    </div>
+    </section>
+    <!-- form ends here -->
 
   <!-- FOOTER -->
   <footer>
