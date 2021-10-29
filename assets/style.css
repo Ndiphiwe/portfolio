@@ -36,7 +36,7 @@
 
 /* Navigtion */
 .thisnav{
-  background: linear-gradient(to right, #ffffff -22%, #000000 100%);
+  background: linear-gradient(to right, #e8e8e8 -22%, #000 100%); 
   padding: 10px 20px;
 }
 .hmnav{
@@ -65,7 +65,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #d83434;
   display: block;
   transition: 0.3s;
 }
@@ -101,8 +101,7 @@
   line-height: 120px;
   letter-spacing: 5px;
   text-align: center;
-  background: -o-linear-gradient(45deg,#ff8a00,#e52e71,#044bea,#7a00ff);
-  background: linear-gradient(45deg,#ff8a00,#e52e71,#044bea,#7a00ff);
+  background: linear-gradient(45deg,#2c2c2c,#b1abab,#575757,#5f7d8f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 300%;
@@ -135,7 +134,7 @@
 
 
 .content h1{
-  background-color: rgba(0, 0, 0, 0.39);
+  /* background-color: rgba(0, 0, 0, 0.39); */
   width: max-content;
   text-align: center;
   margin: 0 auto;
@@ -151,7 +150,7 @@
   text-align: center;
   margin: 0 auto;
   border-radius: 6px; 
-  padding: 1vh 2vh;
+  padding: 1vh 1vh;
   /* -webkit-text-stroke-width: .5px; */
   /* -webkit-text-stroke-color: black; */
 }
@@ -326,7 +325,7 @@ padding: 4vh;
 
 footer{
   margin-top: 20vh;
-  background: linear-gradient(to right, #ffffff -22%, #000000 100%);
+  background: linear-gradient(to right, #000 -22%, #000 100%);
 }
 
 
