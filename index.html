@@ -3,25 +3,442 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imgs/logo.png">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1eaea46512.js" crossorigin="anonymous"></script>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <title>🅽 Ndiphiwe Ngxola</title>
+    <title>Ndiphiwe Ngxola</title>
+    <style>
+      
+/**
+ * ----------------------------------------
+ * animation
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-flicker-out-glow {
+        0% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        13.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        14% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        14.9% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        15% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        22.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        23% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        24.9% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        25% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        34.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        35% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        39.9% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        40% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        42.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        43% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        44.9% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        45% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        50% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        54.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        55% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        69.4% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        69.5% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        69.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        70% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        79.4% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        79.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        80% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        89.8% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        89.9% {
+          opacity: 1;
+          text-shadow: none;
+        }
+        90% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes text-flicker-out-glow {
+        0% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        13.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        14% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        14.9% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        15% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        22.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        23% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        24.9% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        25% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        34.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        35% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        39.9% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        40% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        42.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        43% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        44.9% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        45% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        50% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        54.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        55% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        69.4% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        69.5% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        69.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        70% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        79.4% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        79.9% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        80% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        89.8% {
+          opacity: 1;
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+        }
+        89.9% {
+          opacity: 1;
+          text-shadow: none;
+        }
+        90% {
+          opacity: 0;
+          text-shadow: none;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      
+
+  .text {
+	-webkit-animation: text-flicker-out-glow 14.5s linear infinite both;
+    /* animation: text-flicker-out-glow 6.5s linear infinite both; */
+  margin-top:7.50%;
+  color: #fff;
+  /* font: 150px/1 'TeXGyreAdventorBold'; */
+  font-size: 10vw;
+  text-transform: none;
+  text-align: center;
+  /* font-family: monospace; */
+  text-decoration: underline;
+  /* text-decoration-style: double; */
+  
+}
+
+
+
+.box {
+  /* border: 3px solid green; */
+  background: linear-gradient(to right, rgba(31, 31, 31, 0.336) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: top right;
+  transition: all 1s ease-in-out;
+  border-radius: 4px;
+  padding-bottom: 20px;
+}
+
+.box:hover {
+  background-position: top left;
+}
+
+.box p {
+  text-align: center;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#d83434;
+	color:white;
+	border-radius:50px;
+	text-align:center;
+  /* box-shadow: 2px 1px 14px #514e4e; */
+  z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+.float:hover{
+  background-color: black;
+  color: #d83434;
+}
+ul{
+	position:fixed;
+	right:40px;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
+
+ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+ul li a{
+	background-color:black;
+	/* color:black; */
+	border-radius:50px;
+	text-align:center;
+	/* box-shadow: 2px 2px 3px #999;  */
+	width:60px;
+	height:60px;
+	display:block;
+}
+ul li a:hover{
+  background-color: white;
+}
+
+ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+a#menu-share + ul{
+  visibility: hidden;
+}
+
+a#menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+
+    </style>
 </head>
 <body id="bgimg">
-
+    
+    <!-- NAVBAR -->
     <div class="hmnav">
         <nav class="navbar">
             <div class="mynav">
-                <a href="index.html" id="logo">🅽</a>
+                <a href="index.html" id="logo"><img src="imgs/logo.png" height="30px" alt=""></a>
             </div>
             <div class="">
                 <span class="float-end" style="font-size:30px;cursor:pointer; color: white; float: right;" onclick="openNav()">&#9776;</span>
             </div>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
                 <a href="skills.html">Skills</a>
                 <a href="projects.html">Projects</a>
@@ -30,16 +447,60 @@
             </div>
         </nav>
     </div>
+    <!-- nav ends here -->
 
+    <a href="#" class="float" id="menu-share">
+      <!-- <i class="fa fa-share my-float"></i> -->
+      <!-- <i class="fas fa-cog my-float"></i> -->
+      <i class="fas fa-link my-float"></i>
+      </a>
+      <ul>
+        <li onmouseover="chngImg1()" onmouseout="chngImgAgn1()"><a href="https://github.com/Ndiphiwe/portfolio" target="_blank" style="padding-top: 10px;">
+          <img src="imgs/github.png" id="git" alt="" style="height:40px;" >
+        </a></li>
+        <li onmouseover="chngImg2()" onmouseout="chngImgAgn2()"><a href="https://ndiphiwe-ngxola.netlify.app/" target="_blank" style="padding-top: 10px;">
+          <img src="imgs/netlify.png" id="net" alt="" style="height:40px;">
+        </a></li>
+        <li onmouseover="chngImg3()" onmouseout="chngImgAgn3()"><a href="https://www.linkedin.com/in/ndiphiwe-ngxola/" target="_blank" style="padding-top: 10px;">
+          <img src="imgs/lnkdin.png" id="lnkd" alt="" style="height:40px;">
+        </a></li>
+      </ul>
+
+      <!-- LANDING PAGE -->
     <div class="content"> 
         <div class="landing">
-            <h1 class="display-4 text-dark fw-bold gradient-heading">Ndiphiwe Ngxola</h1>
+            <!-- <h1 class="text display-4 text-dark fw-bold">Ndiphiwe Ngxola</h1> -->
+            <div class="box">
+                <div class="text display-4" id="lphdng">Ndiphiwe Ngxola</div>  
+            </div>
             <h2 class="h6 text-light mt-5 fw-bold">Aspiring Full Stack Web Developer</h2>
-            <a href="about.html"><button type="button" class="btn btn-outline-light align-items-center mt-5">Learn more</button></a>
+            <a href="about.html"><button type="button" class="btn btn-outline-danger align-items-center mt-5">Learn more</button></a>
         </div>
     </div>
 
+    <script>
+      //Image RollOver for Landing page links
+      function chngImg1(){
+        document.getElementById("git").src = "imgs/git.png";
+      }
+      function chngImgAgn1(){
+        document.getElementById("git").src = "imgs/github.png";
+      }
 
+      function chngImg2(){
+        document.getElementById("net").src = "imgs/net.png";
+      }
+      function chngImgAgn2(){
+        document.getElementById("net").src = "imgs/netlify.png";
+      }
+
+      function chngImg3(){
+        document.getElementById("lnkd").src = "imgs/in.png";
+      }
+      function chngImgAgn3(){
+        document.getElementById("lnkd").src = "imgs/lnkdin.png";
+      }
+    </script>
     <script src="assets/nav.js"></script>
     <script src="assets/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
