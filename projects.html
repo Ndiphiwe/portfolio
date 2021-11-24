@@ -41,7 +41,7 @@ h1 {
     text-align: center;
 }
 
-img {
+.prjImg {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
@@ -136,25 +136,25 @@ footer{
 </head>
 <body class="thisbody">
     
-    <div class="thisnav fixed-top">
-        <nav class="navbar">
-            <div class="mynav">
-                <a href="index.html" id="logo">🅽</a>
-            </div>
-            <div class="">
-              <span class="float-end" style="font-size:30px;cursor:pointer; color: #d83434; float: right;" onclick="openNav()">&#9776;</span>
-            </div>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="skills.html">Skills</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="testimonials.html">Testimonials</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-    </div>
+  <div class="thisnav fixed-top">
+    <nav class="navbar">
+        <div class="mynav">
+          <a href="index.html" id="logo"><img src="imgs/logo.png" height="30px" alt=""></a>
+        </div>
+        <div class="">
+          <span class="float-end" style="font-size:30px;cursor:pointer; color: #d83434; float: right;" onclick="openNav()">&#9776;</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</div>
 
 
       <!-- PROJECTS -->
@@ -164,7 +164,7 @@ footer{
       <ul class="cards">
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="imgs/onlinestore.png"></div>
+            <div class="card_image"><img src="imgs/onlinestore.png" class="prjImg"></div>
             <div class="card_content">
               <h2 class="card_title">Fresh Kicks</h2>
               <p class="card_text">An onlinestore which showcases diffrerent types of sneakers for men, women and children.</p>
@@ -183,7 +183,7 @@ footer{
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="imgs/prot-site.png"></div>
+            <div class="card_image"><img src="imgs/prot-site.png" class="prjImg"></div>
             <div class="card_content">
               <h2 class="card_title">Portfolio Prototype</h2>
               <p class="card_text">A prototype version of the main personal portfolio, a test version of all the codes to be implemented.</p>
@@ -202,7 +202,7 @@ footer{
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="imgs/boxmodel.png"></div>
+            <div class="card_image"><img src="imgs/boxmodel.png" class="prjImg"></div>
             <div class="card_content">
               <h2 class="card_title">My boxmodel</h2>
               <p class="card_text">A project based on creating cards containing details of some well known cities in South Africa.</p>
@@ -221,7 +221,7 @@ footer{
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="imgs/flipcards.png"></div>
+            <div class="card_image"><img src="imgs/flipcards.png" class="prjImg"></div>
             <div class="card_content">
               <h2 class="card_title">Flip Cards</h2>
               <p class="card_text">Flip cards project with information about some of the top sports cars in the world.</p>
@@ -240,7 +240,7 @@ footer{
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="imgs/khon.png"></div>
+            <div class="card_image"><img src="imgs/khon.png" class="prjImg"></div>
             <div class="card_content">
               <h2 class="card_title">Khonaphambili</h2>
               <p class="card_text">A website I was working on during freelance work for a call center group.</p>
@@ -254,7 +254,7 @@ footer{
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="imgs/lesson.png"></div>
+            <div class="card_image"><img src="imgs/lesson.png" class="prjImg"></div>
             <div class="card_content">
               <h2 class="card_title">Web page exercise</h2>
               <p class="card_text">A class exercise based on a lesson on HTML and CSS, the basic fundamentals for website building.</p>
