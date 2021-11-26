@@ -7,7 +7,7 @@
 .thisbody{
   background: linear-gradient(-45deg, #565a5c, #719396, #d8d8d8, #b4d6ce, #05daff);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
 }
       @keyframes gradient {
   0% {
@@ -124,9 +124,13 @@
 /* ABOUT SECTION */
 #abtsec{
   padding-top: 20vh;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
-.myabtimg:hover {
+.extras span{
+  text-decoration: underline;
+}
+
+/* .myabtimg {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -142,8 +146,32 @@
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+} */
+
+#passage{
+  transform: translateX(-200%);
+	opacity: 0;
+  animation: slide-in-anim 2.5s ease-out forwards;
 }
 
+/* TEXT SLIDE IN */
+@keyframes slide-in-anim {
+	20% {
+		opacity: .6;
+	}
+	60% {
+		transform: translateX(4%);
+    color: rgb(165, 175, 174);
+	}
+	75% {
+		transform: translateX(0%);
+    color: rgb(98, 112, 114);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
 
 /* tml */
 * {
