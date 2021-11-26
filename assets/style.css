@@ -23,7 +23,7 @@
 
 
 #bgimg{
-  background-image: url(/imgs/mybg.jpg);
+  background-image: url(/assets/imgs/mybg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
